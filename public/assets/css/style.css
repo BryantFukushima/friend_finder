@@ -56,6 +56,14 @@ body {
   background-color: #FF89A1;
   border: none;
 }
+.new p {
+  color: #FFFFFF;
+  margin: 0;
+}
+.new:hover {
+  background-color: #CC5A82 !important;
+  border-color: #FF89A1 !important;
+}
 .new:active {
   background-color: #CC5A82 !important;
 }
