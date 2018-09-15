@@ -1,24 +1,53 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Common Connections</title>
-</head>
-<body>
-	<h1>RESULTS</h1>
-	<div class="user">
-		<div class="user-info">
-		</div>
-	</div>
-	<div class="match">
-		<div class="match-info">
-		</div>
-	</div>
-	<div class="result"></div>
 
-	<script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-  <script type="text/javascript" src="assets/js/jax.js"></script>
+<head>
+    <title>Common Connections</title>
+</head>
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+<!-- Stylesheet -->
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container jumbotron__details">
+            <h1><a href="/">Common Connections</a></h1>
+            <p>A simple way to find a friend.</p>
+        </div>
+    </div>
+    <div class="results">
+        <h2 class="results__title">RESULTS</h2>
+    </div>
+    <div class="row match-display">
+        <div class="match-display__user col">
+            <div class="user-info">
+            	<!-- js appended h2 -->
+            </div>
+        </div>
+        <div class="match-display__connect col">
+        	<p>connected with</p>
+        </div>
+        <div class="match-display__match col">
+            <div class="match-info">
+            	<!-- js appended h2 -->
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center">
+	    <button class="btn btn-primary new">
+	    	&#8635; New Entry
+	    </button>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- Ajax JS -->
+    <script type="text/javascript" src="assets/js/jax.js"></script>
 </body>
+
 </html>

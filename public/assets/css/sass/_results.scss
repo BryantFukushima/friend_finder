@@ -1,0 +1,60 @@
+.results {
+    &__title {
+        text-align: center;
+        margin: 5rem;
+        font-size: 3rem;
+        border-bottom: 2px solid rgba($tertiary-color, .4);
+        padding-bottom: 1rem;
+    }
+}
+
+.match-display {
+    text-align: center;
+    background-color: rgba($tertiary-color, 0.4);
+    margin: 3rem;
+    padding: 5rem 3rem;
+    border-radius: 1rem;
+
+    &__user {
+        .user-info {
+            h2 {
+                font-size: 3rem;
+                margin-bottom: 0!important;
+            }
+        }
+    }
+
+    &__connect {
+        position: relative;
+        p {
+            color: $primary-color;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &__match {
+        .match-info {
+            h2 {
+                font-size: 3rem;
+                margin-bottom: 0!important;
+            }
+        }
+    }
+}
+
+.new {
+	text-align: center;
+    margin: 3rem auto;
+    width: 20%;
+    font-size: 1.6rem;
+    background-color: $primary-color;
+    border: none;
+
+    &:active {
+        background-color: $primary-dark!important;
+    }
+}

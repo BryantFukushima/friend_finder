@@ -1,0 +1,25 @@
+// _base.scss
+
+$primary-color: #FF89A1;
+$primary-dark: #CC5A82;
+$secondary-color: #EDF6FF;
+$tertiary-color: #FFD38E;
+
+$black-dark: #777777;
+
+$primary-font: 'Catamaran', sans-serif;
+
+* {
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: $primary-font;
+	color: $black-dark;
+	font-size: 1.6rem;
+	box-sizing: border-box;
+}

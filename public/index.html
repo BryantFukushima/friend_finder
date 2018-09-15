@@ -1,58 +1,187 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Common Connections</title>
-</head>
-<body>
-	<h1>
-		<span>Common Connections</span> <br>
-		<span>A simple way to find a friend.</span>
-	</h1>
 
-	<form action="survey" method="POST">
-		name:
-		<input type="text" name="user">
-		<h3>Nighttime is better than the daytime.</h3>
-		Strongly Disagree
-		<input type="range" name="scores" min="1" max="5">
-		Strongly Agree
-		<h3>Hugs over handshakes.</h3>
-		Strongly Disagree
-		<input type="range" name="scores" min="1" max="5">
-		Strongly Agree
-		<h3>I hate people.</h3>
-		Strongly Disagree
-		<input type="range" name="scores" min="1" max="5">
-		Strongly Agree
-		<h3>The glass is half full not half empty.</h3>
-		Strongly Disagree
-		<input type="range" name="scores" min="1" max="5">
-		Strongly Agree
-		<h3>Humor is more attractive than intelligence.</h3>
-		Strongly Disagree
-		<input type="range" name="scores" min="1" max="5">
-		Strongly Agree
-		<h3>I don't anger easily.</h3>
-		Strongly Disagree
-		<input type="range" name="scores" min="1" max="5">
-		Strongly Agree
-		<h3>You can find me working out.</h3>
-		Strongly Disagree
-		<input type="range" name="scores" min="1" max="5">
-		Strongly Agree
-		<h3>I'm not a dessert kind of person.</h3>
-		Strongly Disagree
-		<input type="range" name="scores" min="1" max="5">
-		Strongly Agree
-		<h3>I consider myself very spiritual.</h3>
-		Strongly Disagree
-		<input type="range" name="scores" min="1" max="5">
-		Strongly Agree
-		<h3>I love the outdoors.</h3>
-		Strongly Disagree
-		<input type="range" name="scores" min="1" max="5">
-		Strongly Agree <br><br>
-		<button class="submit" type="submit">submit</button>
-	</form>
+<head>
+    <title>Common Connections</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container jumbotron__details">
+            <h1><a href="/">Common Connections</a></h1>
+            <p>A simple way to find a friend.</p>
+        </div>
+    </div>
+    <div class="survey">
+        <h2 class="text-center survey__title">Connection survey</h2>
+        <form action="survey" method="POST" class="survey__form text-center">
+            <div class="survey__name">
+                <h3>Name:</h3>
+                <input type="text" name="user" required>
+            </div>
+            <div class="survey__question">
+                <h3>Nighttime is better than the daytime.</h3>
+                <div class="row mt-5">
+                    <p class="col m-0">Strongly Disagree</p>
+                    <input class="col-auto p-0" type="range" name="scores" min="1" max="5">
+                    <p class="col m-0">Strongly Agree</p>
+                </div>
+                <div class="row m-auto text-center justify-content-center survey__question--range">
+                    <div class="col">1</div>
+                    <div class="col">2</div>
+                    <div class="col">3</div>
+                    <div class="col">4</div>
+                    <div class="col">5</div>
+                </div>
+            </div>
+            <div class="survey__question">
+                <h3>Hugs over handshakes.</h3>
+                <div class="row mt-5">
+                    <p class="col m-0">Strongly Disagree</p>
+                    <input class="col-auto p-0" type="range" name="scores" min="1" max="5">
+                    <p class="col m-0">Strongly Agree</p>
+                </div>
+                <div class="row m-auto text-center justify-content-center survey__question--range">
+                    <div class="col">1</div>
+                    <div class="col">2</div>
+                    <div class="col">3</div>
+                    <div class="col">4</div>
+                    <div class="col">5</div>
+                </div>
+            </div>
+            <div class="survey__question">
+                <h3>I hate people.</h3>
+                <div class="row mt-5">
+                    <p class="col m-0">Strongly Disagree</p>
+                    <input class="col-auto p-0" type="range" name="scores" min="1" max="5">
+                    <p class="col m-0">Strongly Agree</p>
+                </div>
+                <div class="row m-auto text-center justify-content-center survey__question--range">
+                    <div class="col">1</div>
+                    <div class="col">2</div>
+                    <div class="col">3</div>
+                    <div class="col">4</div>
+                    <div class="col">5</div>
+                </div>
+            </div>
+            <div class="survey__question">
+                <h3>The glass is half full not half empty.</h3>
+                <div class="row mt-5">
+                    <p class="col m-0">Strongly Disagree</p>
+                    <input class="col-auto p-0" type="range" name="scores" min="1" max="5">
+                    <p class="col m-0">Strongly Agree</p>
+                </div>
+                <div class="row m-auto text-center justify-content-center survey__question--range">
+                    <div class="col">1</div>
+                    <div class="col">2</div>
+                    <div class="col">3</div>
+                    <div class="col">4</div>
+                    <div class="col">5</div>
+                </div>
+            </div>
+            <div class="survey__question">
+                <h3>Humor is more attractive than intelligence.</h3>
+                <div class="row mt-5">
+                    <p class="col m-0">Strongly Disagree</p>
+                    <input class="col-auto p-0" type="range" name="scores" min="1" max="5">
+                    <p class="col m-0">Strongly Agree</p>
+                </div>
+                <div class="row m-auto text-center justify-content-center survey__question--range">
+                    <div class="col">1</div>
+                    <div class="col">2</div>
+                    <div class="col">3</div>
+                    <div class="col">4</div>
+                    <div class="col">5</div>
+                </div>
+            </div>
+            <div class="survey__question">
+                <h3>I don't anger easily.</h3>
+                <div class="row mt-5">
+                    <p class="col m-0">Strongly Disagree</p>
+                    <input class="col-auto p-0" type="range" name="scores" min="1" max="5">
+                    <p class="col m-0">Strongly Agree</p>
+                </div>
+                <div class="row m-auto text-center justify-content-center survey__question--range">
+                    <div class="col">1</div>
+                    <div class="col">2</div>
+                    <div class="col">3</div>
+                    <div class="col">4</div>
+                    <div class="col">5</div>
+                </div>
+            </div>
+            <div class="survey__question">
+                <h3>You can find me working out.</h3>
+                <div class="row mt-5">
+                    <p class="col m-0">Strongly Disagree</p>
+                    <input class="col-auto p-0" type="range" name="scores" min="1" max="5">
+                    <p class="col m-0">Strongly Agree</p>
+                </div>
+                <div class="row m-auto text-center justify-content-center survey__question--range">
+                    <div class="col">1</div>
+                    <div class="col">2</div>
+                    <div class="col">3</div>
+                    <div class="col">4</div>
+                    <div class="col">5</div>
+                </div>
+            </div>
+            <div class="survey__question">
+                <h3>I'm not a dessert kind of person.</h3>
+                <div class="row mt-5">
+                    <p class="col m-0">Strongly Disagree</p>
+                    <input class="col-auto p-0" type="range" name="scores" min="1" max="5">
+                    <p class="col m-0">Strongly Agree</p>
+                </div>
+                <div class="row m-auto text-center justify-content-center survey__question--range">
+                    <div class="col">1</div>
+                    <div class="col">2</div>
+                    <div class="col">3</div>
+                    <div class="col">4</div>
+                    <div class="col">5</div>
+                </div>
+            </div>
+            <div class="survey__question">
+                <h3>I consider myself very spiritual.</h3>
+                <div class="row mt-5">
+                    <p class="col m-0">Strongly Disagree</p>
+                    <input class="col-auto p-0" type="range" name="scores" min="1" max="5">
+                    <p class="col m-0">Strongly Agree</p>
+                </div>
+                <div class="row m-auto text-center justify-content-center survey__question--range">
+                    <div class="col">1</div>
+                    <div class="col">2</div>
+                    <div class="col">3</div>
+                    <div class="col">4</div>
+                    <div class="col">5</div>
+                </div>
+            </div>
+            <div class="survey__question">
+                <h3>I love the outdoors.</h3>
+                <div class="row mt-5">
+                    <p class="col m-0">Strongly Disagree</p>
+                    <input class="col-auto p-0" type="range" name="scores" min="1" max="5">
+                    <p class="col m-0">Strongly Agree</p>
+                </div>
+                <div class="row m-auto text-center justify-content-center survey__question--range">
+                    <div class="col">1</div>
+                    <div class="col">2</div>
+                    <div class="col">3</div>
+                    <div class="col">4</div>
+                    <div class="col">5</div>
+                </div>
+            </div>
+            <button class="submit btn btn-danger" type="submit">submit</button>
+        </form>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
+
 </html>
